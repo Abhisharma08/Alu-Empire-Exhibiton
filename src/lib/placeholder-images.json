@@ -1,0 +1,10 @@
+{
+  "placeholderImages": [
+    {
+      "id": "exhibition-banner",
+      "description": "Alu Empire exhibiting at ACE TECH Hyderabad from 23rd to 25th Jan 2026 at HITEX Exhibition Centre.",
+      "imageUrl": "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752402173/exhibition-poster.jpg",
+      "imageHint": "exhibition stall"
+    }
+  ]
+}
