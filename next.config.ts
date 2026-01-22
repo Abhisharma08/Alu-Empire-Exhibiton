@@ -1,25 +1,36 @@
-import type { NextConfig } from 'next';
-
-const BASE_PATH = '/ACETECH-hyderabad-2026';
+import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  basePath: BASE_PATH,
-  assetPrefix: BASE_PATH,
-
+   basePath: '/ACETECH-hyderabad-2026',
+  trailingSlash: true,
+  /* config options here */
   typescript: {
     ignoreBuildErrors: true,
   },
-
   eslint: {
     ignoreDuringBuilds: true,
   },
-
   images: {
+     unoptimized: true,
     remotePatterns: [
-      { protocol: 'https', hostname: 'placehold.co', pathname: '/**' },
-      { protocol: 'https', hostname: 'images.unsplash.com', pathname: '/**' },
-      { protocol: 'https', hostname: 'picsum.photos', pathname: '/**' },
-      { protocol: 'https', hostname: 'res.cloudinary.com', pathname: '/**' },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.aluempire.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 };
