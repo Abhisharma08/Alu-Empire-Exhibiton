@@ -1,6 +1,10 @@
 import type {NextConfig} from 'next';
 
+
+ACETECH-hyderabad-2026
+
 const nextConfig: NextConfig = {
+   basePath:'/ACETECH-hyderabad-2026'
   /* config options here */
   typescript: {
     ignoreBuildErrors: true,
